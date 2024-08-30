@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Recommendation System </title>
+   <link rel="stylesheet" href="{{url_for('static',filename='style/index.css')}}">
+   <link rel="stylesheet" href="/static/style/index.css">
+</head>
+<body>
+    <main>
+
+        <div id="header">
+            <div id="home"><p>Home</p></div>
+            <div id="services"><p>Services</p></div>
+            <div id="product"><p>Product</p></div>
+            <div id="contact"><p>Contact</p></div>
+            <div id="about"><p>About</p></div>
+        </div>
+        <div id="fakeheader"></div>
+
+        <div class="container">
+            <form action="/GET" method="POST">
+    
+            <div class="fertilizer">
+                <label for="Nitrogen">Nitrogen</label>
+                <input type="number" id="Nitrogen" name="Nitrogen" placeholder="Enter Nitrogen" class="form-control" required step="0">
+    
+                <label for="Phosporus">Phosphorus</label>
+                <input type="number" id="Phosporus" name="Phosporus" placeholder="Enter Phosphorus" class="form-control" required step="0">
+              
+                <label for="Potassium">Potassium</label>
+                <input type="number" id="Potassium" name="Potassium" placeholder="Enter Potassium" class="form-control" required step="0">
+
+            </div>
+                
+             <div class="other"> 
+                <label for="Temperature">Temperature</label>
+                <input type="number" step="0.01" id="Temperature" name="Temperature" placeholder="Enter Temperature in °C" class="form-control" required step="0">
+                       
+                <label for="Humidity">Humidity</label>
+                <input type="number" step="0.01" id="Humidity" name="Humidity" placeholder="Enter Humidity in %" class="form-control" required step="0">
+    
+                <label for="pH">pH</label>
+                <input type="number" step="0.01" id="Ph" name="Ph" placeholder="Enter pH value" class="form-control" required step="0">
+    
+                <label for="Rainfall">Rainfall</label>
+                <input type="number" step="0.01" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall in mm" class="form-control" required step="0">
+
+             </div>
+              
+    
+
+                <div class="submit">
+                    <button type="submit"  >Get Recommendation</button>
+                
+                </div>
+                
+              
+                      
+
+                {% if result %}
+                <div class="image" >
+
+                    <h4 class="card-title">Recommend Crop for cultivation is:</h4> <p class="card_text">{{ result }}</p>
+                    
+                    
+                  
+                </div>
+               {% endif %}
+
+            </form>
+        </div>
+
+    </main>
+    
+    
+</body>
+</html>
