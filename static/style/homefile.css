@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%
+}
+main{
+    height: 100%;
+    width: 100% ; 
+}
+main #header{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(202, 214, 204);
+    color: rgb(19, 102, 75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    position: fixed;
+}
+
+
+ #header #home{
+    margin-left: 2%;
+ }
+ #header #about{
+    margin-right: 2%;
+ }
+main #fakeheader{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(202, 214, 204);
+}
+#page1{
+    height: 90%;
+    width: 100%;
+    background-image: url("img1.jpg");
+    background-size: 100% 100%
+    
+   
+}
+#page1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(13, 17, 20);
+    
+
+}
+#page2{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(184, 220, 190);
+    
+}
+#page2 p{
+    
+    padding: 1%;
+    font-size: x-large;
+
+}
+#page2 ul{
+    
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+
+}
+#page2 form{
+    padding-top: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+
+    
+
+    
+}
+#page2 form :hover{
+    background-color: rgb(16, 159, 16);
+}
