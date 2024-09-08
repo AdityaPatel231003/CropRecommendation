@@ -5,8 +5,6 @@ In the crop recommendation application, the user can provide the soil data from 
 
 
 
-DATA SOURCE 📊
-
 
 Notebooks 📓
 I have also published the corresponding code on Kaggle Notebooks.
