@@ -3,7 +3,7 @@
 A simple ML  based website which recommends the best crop to grow. 
 In the crop recommendation application, the user can provide the soil data from their side and the application will predict which crop should the user grow.
 
-
+http://127.0.0.1:5000
 
 
 Notebooks 📓
